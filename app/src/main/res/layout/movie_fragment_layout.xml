@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212F3C"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/frag_poster_view"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/frag_overview_tv"/>
+
+    <TextView
+        android:id="@+id/frag_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#F0F3F4"
+        android:textSize="16dp"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frag_poster_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/frag_score_tv"/>
+
+    <TextView
+        android:id="@+id/frag_score_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#F0F3F4"
+        android:textSize="16dp"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/frag_poster_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_title_tv"
+        app:layout_constraintBottom_toTopOf="@+id/frag_date_tv"/>
+
+    <TextView
+        android:id="@+id/frag_date_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#F0F3F4"
+        android:textSize="16dp"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/frag_overview_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frag_poster_view"
+        app:layout_constraintTop_toBottomOf="@id/frag_score_tv" />
+
+    <TextView
+        android:id="@+id/frag_overview_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:textColor="#F0F3F4"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frag_poster_view"
+        app:layout_constraintBottom_toTopOf="@+id/frag_background_iv"/>
+
+    <ImageView
+        android:id="@+id/frag_background_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_overview_tv"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
